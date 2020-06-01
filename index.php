@@ -10,7 +10,7 @@ Text Domain: skills
 */
 
 if (!function_exists('add_action')) {
-    echo __('Por enquanto só um plugin sem sentido', 'skills');
+    echo __('Este é um plugin Worpress e não tem sentido ser chamado por fora!', 'skills');
     exit;
 }
 
@@ -26,6 +26,6 @@ include('includes/admin/admin_init.php');
 register_activation_hook(SKILLS_PLUGIN_URL, 'ap_skills_activate_plugin');
 add_action('init', 'ap_skills_init');
 add_action('admin_init', 'ap_skills_admin_init');
-add_action('save_post', 'ap_skills_save_post_admin', 10, 3);
+add_action('save_post_skills', 'ap_skills_save_post_admin', 10, 3);
 
 // Shortcodes

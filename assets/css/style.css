@@ -1,0 +1,8 @@
+.ap_skills_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.ap_skills_container input {
+    width: 100%;
+}
